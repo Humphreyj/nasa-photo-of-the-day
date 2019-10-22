@@ -1,0 +1,27 @@
+content {
+    width: 100%;
+    height: 100%;
+    padding: 0% 3%;
+ 
+}
+
+.date {
+    color: white;
+}
+.title {
+    color: white;
+}
+.explanation {
+    line-height: 2em;
+    font-size: 1.3em;
+    padding: 0% 1%;
+    height: 10em;
+    overflow-y: scroll;
+    box-sizing: content-box;
+    color: white;
+    
+}
+.explanation::-webkit-scrollbar {
+    display: none;
+    }
+    /* What a treasure. This hides the scroll bar in chrome */

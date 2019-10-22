@@ -1,0 +1,13 @@
+.media {
+    width: 100%;
+}
+.space-image {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media(min-width: 700px) {
+    .space-image {
+        width: 70%;
+    }
+}
