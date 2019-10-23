@@ -5,7 +5,7 @@ const Content = (props) => {
     return (
         <div className='content'>
             
-                <h3 className='date' >{props.date}</h3>
+                <h3 className='date' >POTD for {props.date}</h3>
             
             {/* date info */}
             <div className="media-container">
