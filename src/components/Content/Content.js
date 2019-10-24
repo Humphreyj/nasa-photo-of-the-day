@@ -1,6 +1,17 @@
 import React from 'react';
 import Media from '../Media/Media';
+import styled from 'styled-components';
 import'./Content.css';
+
+const Description = styled.p`
+line-height: 2em;
+font-size: 1.3em;
+padding: 0% 1%;
+height: 10em;
+overflow-y: scroll;
+box-sizing: content-box;
+color: white
+`
 const Content = (props) => {
     return (
         <div className='content'>
@@ -16,7 +27,9 @@ const Content = (props) => {
                  media_type={props.media_type}
                  url={props.url} />
 
-                <p className="explanation">{props.explanation}</p>
+                <Description>
+                {props.explanation}
+                </Description>
             </div>
         </div>
     );

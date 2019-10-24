@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
+
 import './Media.css';
+
+
 
 const Media = (props) => {
     return (

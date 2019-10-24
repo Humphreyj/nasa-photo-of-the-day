@@ -1,6 +1,17 @@
 import React,{ useState,useEffect } from 'react';
 import axios from 'axios';
+import styled from 'styled-components';
 import './MarsWeather.css';
+
+const Headline = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+color: white;
+background: rgba(0,0,0,0,3);
+padding-bottom: 2em;
+`
 
 const MarsWeather = () => {
     const API_KEY = '8d0vbyw5QuSEqhxQ2wdHQjW5LqL181bYvzVzcAJy';
@@ -24,13 +35,13 @@ const MarsWeather = () => {
     },[])
     console.log(weather);
     return (
-        <div className='mars-weather'>
+        <Headline>
             <h4 className="mars-title">Today on Mars</h4>
             <div className="temps">
                 <p className="low temp">Low: {weather.mn}&deg;F</p>
                 <p className="high temp">High: {weather.mx}&deg;F</p>
             </div>
-        </div>
+            </Headline>
     );
 }
 
