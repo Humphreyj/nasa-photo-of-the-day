@@ -34,15 +34,19 @@ const MarsWeather = () => {
         })
     },[])
     console.log(weather);
-    return (
-        <Headline>
-            <h4 className="mars-title">Today on Mars</h4>
-            <div className="temps">
-                <p className="low temp">Low: {weather.mn}&deg;F</p>
-                <p className="high temp">High: {weather.mx}&deg;F</p>
-            </div>
-            </Headline>
-    );
+    if(weather.low === 'low') {
+        return null
+    }else {
+        return (
+            <Headline>
+                <h4 className="mars-title">Today on Mars</h4>
+                <div className="temps">
+                    <p className="low temp">Low: {weather.mn}&deg;F</p>
+                    <p className="high temp">High: {weather.mx}&deg;F</p>
+                </div>
+                </Headline>
+        );
+    }
 }
 
 export default MarsWeather;
