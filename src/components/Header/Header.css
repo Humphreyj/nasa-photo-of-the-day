@@ -4,3 +4,8 @@
 img {
     width: 30%;
 }
+@media(min-width: 800px) {
+    img {
+        width:15%;
+    }
+}

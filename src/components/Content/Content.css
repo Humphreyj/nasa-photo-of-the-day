@@ -12,6 +12,7 @@ content {
     color: white;
 }
 /* .explanation {
+    display: inline-block;
     line-height: 2em;
     font-size: 1.3em;
     padding: 0% 1%;
@@ -19,9 +20,8 @@ content {
     overflow-y: scroll;
     box-sizing: content-box;
     color: white;
-    
 } */
-.explanation::-webkit-scrollbar {
-    display: none;
-    }
+
     /* What a treasure. This hides the scroll bar in chrome */
+
+    

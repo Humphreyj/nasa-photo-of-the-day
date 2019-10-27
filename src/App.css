@@ -3,6 +3,13 @@
   background: url('./img/space-bg.jpg');
   background-size: cover;
   padding-bottom: 5%;
+  height: 100%;
+}
+
+@media(min-width: 700px) {
+  .App {
+    height: 100vh;
+  }
 }
 
 
