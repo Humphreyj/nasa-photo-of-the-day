@@ -25,7 +25,7 @@ const MarsWeather = () => {
         .then(res => {
             console.log(res.data);
             let data = res.data;
-            let target = data.sol_keys[6]
+            let target = data.sol_keys[5]
             console.log(res.data[target].AT);
              updateWeather(res.data[target].AT);
         })
@@ -34,9 +34,7 @@ const MarsWeather = () => {
         })
     },[])
     console.log(weather);
-    if(weather.low === 'low') {
-        return null
-    }else {
+    
         return (
             <Headline>
                 <h4 className="mars-title">Today on Mars</h4>
@@ -46,7 +44,7 @@ const MarsWeather = () => {
                 </div>
                 </Headline>
         );
-    }
+    
 }
 
 export default MarsWeather;
